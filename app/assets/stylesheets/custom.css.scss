@@ -60,7 +60,7 @@ body {
     height: 95px;
 }
 .logo {
-    background: url('../img/logo.png') no-repeat;
+    background: url('../assets/logo.png') no-repeat;
     display: block;
     text-decoration: none;
     border: 0 none;
@@ -70,7 +70,7 @@ body {
 }
 
 .btnSearch {
-    background: url('../img/btnSearch.png') no-repeat center center;
+    background: url('../assets/btnSearch.png') no-repeat center center;
     display: block;
     width: 196px; height: 46px;
     text-decoration: none;
@@ -80,7 +80,7 @@ body {
 }
 
 .giveTip {
-    background: url('../img/star.png') no-repeat left center;
+    background: url('../assets/star.png') no-repeat left center;
     display: block;
     height: 17px;
     text-decoration: none;
@@ -124,7 +124,7 @@ body {
     margin: 0;
 }
 .container .row.line {
-    background: url('../img/bgExpand.jpg') repeat-x center -1px;
+    background: url('../assets/bgExpand.jpg') repeat-x center -1px;
     position: relative;
 }
 .container .row.line.classic:before,
@@ -138,13 +138,13 @@ body {
     content: ' ';
 }
 .container .row.line.classic:before {
-    background: url('../img/divider.png') no-repeat center center;
+    background: url('../assets/divider.png') no-repeat center center;
 }
 .container .row.line.success:before {
-    background: url('../img/dividerSuccess.png') no-repeat center center;
+    background: url('../assets/dividerSuccess.png') no-repeat center center;
 }
 .container .row.line.arrow:before {
-    background: url('../img/dividerArrow.png') no-repeat center center;
+    background: url('../assets/dividerArrow.png') no-repeat center center;
 }
 
 /******************************************************************************/
@@ -171,7 +171,7 @@ body {
     margin: 0 0 20px 0;
 }
 .imgBoxWithMask:after {
-    background: url('../img/imgBoxMask.png') no-repeat center center;
+    background: url('../assets/imgBoxMask.png') no-repeat center center;
     display: block;
     z-index: 10;
     content: ' ';
@@ -236,7 +236,7 @@ body {
     position: relative;
 }
 #myCarousel .bottomLine {
-    background: url('../img/carouselBottom.png') no-repeat center center;
+    background: url('../assets/carouselBottom.png') no-repeat center center;
     display: block;
     height: 52px;
     position: absolute;
@@ -294,13 +294,13 @@ body {
     border-radius: 0px;
 }
 .carousel-control.left {
-    background: url('../img/btnLeftArrow.png') no-repeat center center;
+    background: url('../assets/btnLeftArrow.png') no-repeat center center;
     display: block;
     width: 40px; height: 72px;
     left: 0;
 }
 .carousel-control.right {
-    background: url('../img/btnRightArrow.png') no-repeat center center;
+    background: url('../assets/btnRightArrow.png') no-repeat center center;
     display: block;
     width: 40px; height: 72px;
     right: 0;
@@ -313,7 +313,7 @@ body {
     font-family: 'Helvetica Neue Light', 'Helvetica';
 }
 .blackBox {
-    background: url('../img/bgBlackOverlay.png') center center;
+    background: url('../assets/bgBlackOverlay.png') center center;
     display: block;
     width: 425px; height: 199px;
     padding: 26px 0 0 35px;
@@ -325,7 +325,7 @@ body {
     margin: 0; padding: 0;
 }
 .blackBox ul li {
-    background:  url('../img/liItemArrowBottom.png') no-repeat left center;
+    background:  url('../assets/liItemArrowBottom.png') no-repeat left center;
     padding: 3px 0 3px 20px;
     color: #FFF;
 }
@@ -333,7 +333,7 @@ body {
     padding: 65px 0 0 0; margin: 0 0 0 -15px;
 }
 .carousel-inner .btnMore {
-    background: url('../img/btnMore.png') no-repeat center center;
+    background: url('../assets/btnMore.png') no-repeat center center;
     width: 231px; height: 56px;
     margin: 10px 0 0 0;
     cursor: pointer;
@@ -341,7 +341,7 @@ body {
     display: block;
 }
 .ring {
-    background: url('../img/carouselRing.png') no-repeat center center;
+    background: url('../assets/carouselRing.png') no-repeat center center;
     display: block;
     width: 212px; height: 101px;
     position: absolute;
@@ -362,19 +362,19 @@ body {
     margin: 0 30px 0 0;
 }
 .viewBox.location {
-    background: url('../img/logoHilton.png') no-repeat center center;
+    background: url('../assets/logoHilton.png') no-repeat center center;
 }
 .viewBox.location:after {
-    background: url('../img/ringLocation.png') no-repeat center center;
+    background: url('../assets/ringLocation.png') no-repeat center center;
     display: block;
     content: ' ';
     width: 212px; height: 224px;
 }
 .viewBox.client {
-    background: url('../img/logoGrey.png') no-repeat center center;
+    background: url('../assets/logoGrey.png') no-repeat center center;
 }
 .viewBox.client:after {
-    background: url('../img/ringClient.png') no-repeat center center;
+    background: url('../assets/ringClient.png') no-repeat center center;
     display: block;
     content: ' ';
     width: 212px; height: 224px;
@@ -395,7 +395,7 @@ body {
     width: 440px;
 }
 .contact .bgForm {
-    background: url('../img/bgForm.jpg') no-repeat center center;
+    background: url('../assets/bgForm.jpg') no-repeat center center;
     width: 422px; height: 326px;
     float: left;
     padding: 65px 0 0 0; margin: 0 0 0 120px;
@@ -417,18 +417,18 @@ body {
     border-radius: 5px;
 } 
 .contact .bgForm input.error {
-    background: #FFF url('../img/icoCros.png') no-repeat 255px center;
+    background: #FFF url('../assets/icoCros.png') no-repeat 255px center;
     border: 1px solid #fa9d9d;
     color: #e90000;
 }
 .contact .bgForm input.success {
-    background: #FFF url('../img/icoSuccess.png') no-repeat 247px center;
+    background: #FFF url('../assets/icoSuccess.png') no-repeat 247px center;
 }
 .contact .bgForm input.email {
     font-size: 12px;
 }
 .contact .bgForm input.button {
-    background: url('../img/btnSend.png') no-repeat center center;
+    background: url('../assets/btnSend.png') no-repeat center center;
     width: 287px; height: 69px;
     cursor: pointer;
     border: 0 none; 
@@ -443,7 +443,7 @@ body {
     margin: 0; padding: 0px;
 }
 .formList ul li {
-    background: url('../img/liItem.png') no-repeat left center;
+    background: url('../assets/liItem.png') no-repeat left center;
     padding: 10px 0 10px 15px;
 }
 .formList p {
@@ -474,7 +474,7 @@ body {
     margin: 0; padding: 0;
 }
 .footer ul li {
-    background: url('../img/footerLiItem.png') no-repeat right center;
+    background: url('../assets/footerLiItem.png') no-repeat right center;
     display: inline-block;
     float: left;
     padding: 0 14px 0 10px;
