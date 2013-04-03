@@ -1,4 +1,6 @@
 SpotfizzCom::Application.routes.draw do
+  match '/cz-test',    to: 'static_pages#cz'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

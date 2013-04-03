@@ -1,0 +1,762 @@
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../assets/HelveticaNeue.eot') format('eot'),
+         url('../assets/HelveticaNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url('../assets/HelveticaNeueBold.eot') format('eot'),
+         url('../assets/HelveticaNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue Italic';
+    src: url('../assets/HelveticaNeueItalic.eot') format('eot'),
+         url('../assets/HelveticaNeueItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url('../assets/HelveticaNeueLight.eot') format('eot'),
+         url('../assets/HelveticaNeueLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: none;
+}
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../assets/ProximaNova-Bold.eot') format('eot');
+    font-weight: normal;
+    font-style: none;
+}
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('../assets/ProximaNova-Light.eot') format('eot');
+    font-weight: normal;
+    font-style: none;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Verdana', 'Tahoma';
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+.clear {
+    clear: both;
+    height: 0; font-size: 0;
+    padding: 0; margin :0;
+}
+
+
+.header {
+    height: 95px;
+}
+.logo {
+    background: url('../img/logo.png') no-repeat;
+    display: block;
+    text-decoration: none;
+    border: 0 none;
+    width: 116px; height: 28px;
+    position: absolute;
+    left: 0; top: 35px;
+}
+
+.btnSearch {
+    background: url('../img/btnSearch.png') no-repeat center center;
+    display: block;
+    width: 196px; height: 46px;
+    text-decoration: none;
+    border: 0 none;
+    position: absolute;
+    right: 0; top: 25px;
+}
+
+.giveTip {
+    background: url('../img/star.png') no-repeat left center;
+    display: block;
+    height: 17px;
+    text-decoration: none;
+    padding: 0 0 0 25px;
+    color: #a1a1a1;
+    font-size: 12px;
+    text-decoration: underline;
+    border: 0 none;
+    position: absolute;
+    right:210px; top: 36px;
+}
+
+/******************************************************************************/
+/********* Capitals *********/
+
+.centerBox {
+    width: 922px;
+    margin: 0 auto; padding: 0 0 0 20px;
+}
+.centerBox .span13 {
+    width: 220px;
+}
+.reference .centerBox,
+.success .centerBox {
+    width: 940px;
+}
+.carousel-inner .centerBox {
+    padding: 0;
+    height: 500px;
+}
+.centerBox .span13 {
+    margin-left: 14px;
+}
+.centerBox .span13:first-of-type {
+    margin: 0;
+}
+.container {
+    width: 100%;
+}
+.container .row {
+    margin: 0;
+}
+.container .row.line {
+    background: url('../img/bgExpand.jpg') repeat-x center -1px;
+    position: relative;
+}
+.container .row.line.classic:before,
+.container .row.line.arrow:before,
+.container .row.line.success:before {
+    display: block;
+    position: absolute;
+    left: 50%; top: -16px;
+    width: 58px; height: 47px;
+    margin: 0 0 0 -14px;
+    content: ' ';
+}
+.container .row.line.classic:before {
+    background: url('../img/divider.png') no-repeat center center;
+}
+.container .row.line.success:before {
+    background: url('../img/dividerSuccess.png') no-repeat center center;
+}
+.container .row.line.arrow:before {
+    background: url('../img/dividerArrow.png') no-repeat center center;
+}
+
+/******************************************************************************/
+/********* Fonts *********/
+
+
+.centerBox h2 {
+    color: #262624;
+    margin: 0 0 30px 0;
+}
+.centerBox h2 span {        
+}
+
+
+/******************************************************************************/
+/********* Know Spotfizz *********/
+
+.imgBoxWithMask {
+    display: block;
+    position: relative;
+    width:214px; height: 214px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 20px 0;
+}
+.imgBoxWithMask:after {
+    background: url('../img/imgBoxMask.png') no-repeat center center;
+    display: block;
+    z-index: 10;
+    content: ' ';
+    position: absolute;
+    left: 0; top: 0;
+    width: 214px; height: 214px;
+}
+.imgBoxWithMask img {
+    position: relative;
+    margin: 5px 0 0 5px;
+    z-index: 1;
+}
+.imgBoxWithMask em {
+    position: absolute;
+    left: 22px; top: 27px;
+    color: #3c3c3b;
+    font-style: normal;
+    font-weight: bold;
+    z-index: 11;
+    display: block;
+    text-align: center;
+    width: 30px; height: 30px;
+}
+.span13 h4 {
+    font-size: 20px;
+}
+.span13 h2, .span13 h3, .span13 h4, .span13 h5 {
+    color: #754595;
+}
+.span13 p {
+    color: #737373;
+    font-size: 14px;
+    margin: 10px 15px;
+}
+.graySolidBox {
+    width: 950px; margin-left: -28px;
+    border: 1px solid #ccc;
+    padding: 10px 25px; 
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.graySolidBox span {
+    font-size: 13px;
+}
+.graySolidBox strong {
+    color: #000000;
+    font-size: 16px;
+}
+.graySolidBox a {
+    color: #754595;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/******************************************************************************/
+/********* Carousel Spotfizz *********/
+
+.carousel {
+    margin-bottom: 60px;
+    position: relative;
+}
+#myCarousel .bottomLine {
+    background: url('../img/carouselBottom.png') no-repeat center center;
+    display: block;
+    height: 52px;
+    position: absolute;
+    left: 0; bottom: -20px;
+}
+.carousel .container {
+    position: relative;
+    z-index: 9;
+}
+
+.carousel-control {
+    height: 80px;
+    margin-top: 0;
+    font-size: 120px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
+
+.carousel .item {
+    height: 500px;
+}
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-top: 200px;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+
+.carousel-control {
+    display: block;
+    opacity: 1;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.carousel-control.left {
+    background: url('../img/btnLeftArrow.png') no-repeat center center;
+    display: block;
+    width: 40px; height: 72px;
+    left: 0;
+}
+.carousel-control.right {
+    background: url('../img/btnRightArrow.png') no-repeat center center;
+    display: block;
+    width: 40px; height: 72px;
+    right: 0;
+}
+.carousel-inner .centerBox h1 {
+    color: #FFF;
+    width: 480px;
+}
+.carousel-inner .centerBox h1 span {
+    font-family: 'Helvetica Neue Light', 'Helvetica';
+}
+.blackBox {
+    background: url('../img/bgBlackOverlay.png') center center;
+    display: block;
+    width: 425px; height: 199px;
+    padding: 26px 0 0 35px;
+    position: absolute;
+    bottom: 17px; left: -15px;
+}
+.blackBox ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+.blackBox ul li {
+    background:  url('../img/liItemArrowBottom.png') no-repeat left center;
+    padding: 3px 0 3px 20px;
+    color: #FFF;
+}
+.carousel-inner .infoBox {
+    padding: 65px 0 0 0; margin: 0 0 0 -15px;
+}
+.carousel-inner .btnMore {
+    background: url('../img/btnMore.png') no-repeat center center;
+    width: 231px; height: 56px;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    border: 0 none; 
+    display: block;
+}
+.ring {
+    background: url('../img/carouselRing.png') no-repeat center center;
+    display: block;
+    width: 212px; height: 101px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin: 0 0 0 -106px;
+}
+
+
+/******************************************************************************/
+/********* View Spotfizz *********/
+
+.viewBox {
+    display: block;
+    float: left;
+    width: 212px; height: 224px;
+    text-align: center;
+    margin: 0 30px 0 0;
+}
+.viewBox.location {
+    background: url('../img/logoHilton.png') no-repeat center center;
+}
+.viewBox.location:after {
+    background: url('../img/ringLocation.png') no-repeat center center;
+    display: block;
+    content: ' ';
+    width: 212px; height: 224px;
+}
+.viewBox.client {
+    background: url('../img/logoGrey.png') no-repeat center center;
+}
+.viewBox.client:after {
+    background: url('../img/ringClient.png') no-repeat center center;
+    display: block;
+    content: ' ';
+    width: 212px; height: 224px;
+}
+
+.reference h4 {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 140%;
+}
+.reference p {
+    color: #737373;
+    font-size: 12px;
+}
+.reference .span5,
+.success .span5 {
+    width: 440px;
+}
+.contact .bgForm {
+    background: url('../img/bgForm.jpg') no-repeat center center;
+    width: 422px; height: 326px;
+    float: left;
+    padding: 65px 0 0 0; margin: 0 0 0 120px;
+}
+.contact .formList {
+    width: 320px;
+    float: left;
+}
+
+.contact .bgForm input {
+    border: 1px solid #d5d5d5;
+    height: 43px; width: 240px;
+    padding: 0 20px;
+    font-size: 18px; 
+    color: #262624; 
+    margin: 0 0 14px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+} 
+.contact .bgForm input.error {
+    background: #FFF url('../img/icoCros.png') no-repeat 255px center;
+    border: 1px solid #fa9d9d;
+    color: #e90000;
+}
+.contact .bgForm input.success {
+    background: #FFF url('../img/icoSuccess.png') no-repeat 247px center;
+}
+.contact .bgForm input.email {
+    font-size: 12px;
+}
+.contact .bgForm input.button {
+    background: url('../img/btnSend.png') no-repeat center center;
+    width: 287px; height: 69px;
+    cursor: pointer;
+    border: 0 none; 
+}
+
+.formList {
+    padding: 55px 0 0 0;
+    margin: 0 0 0 25px;
+}
+.formList ul {
+    list-style-type:  none;
+    margin: 0; padding: 0px;
+}
+.formList ul li {
+    background: url('../img/liItem.png') no-repeat left center;
+    padding: 10px 0 10px 15px;
+}
+.formList p {
+    color: #888888;
+    font-size: 12px;
+}
+.formList p strong {
+    color: #262624;
+}
+.formList a {
+    color: #754595;
+    font-weight: bold;
+}
+
+.smallTxt {
+    font-size: 12px;
+}
+.black {
+    color: #000;
+}
+.small {
+    color: #737373;
+    font-size: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+.footer ul li {
+    background: url('../img/footerLiItem.png') no-repeat right center;
+    display: inline-block;
+    float: left;
+    padding: 0 14px 0 10px;
+}
+.footer ul li:last-child {
+    background: none;
+}
+.footer ul li a {
+    color: #262624;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+.navbar-wrapper .navbar {
+
+}
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+    border: 0;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+    padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+    padding: 15px 20px;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+    margin-top: 10px;
+}
+
+
+
+
+
+/* BOXES CONTENT
+-------------------------------------------------- */
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .span4 {
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .span4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+    overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+    .centerBox {
+        width: 460px;
+    }
+    .graySolidBox {
+        width: 460px;
+    }
+    .reference .centerBox, .success .centerBox {
+        width: 470px;
+    }
+    .reference .centerBox .span5, .success .centerBox .span5 {
+        margin-bottom: 50px;
+    }
+    .centerBox .last {
+        margin-left: 0;
+    }
+    .contact .bgForm {
+        margin: 0 0 0 20px;
+    }
+    .formList {
+        margin: 0 0 0 55px;
+        padding: 25px 0 0 0;
+    }
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+    }
+    .blackBox {
+        bottom: 50px;
+    }
+    .carousel .item {
+        height: 500px;
+    }
+    .carousel img {
+        width: auto;
+        height: 500px;
+    }
+
+    .featurette {
+        height: auto;
+        padding: 0;
+    }
+    .featurette-image.pull-left,
+    .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
+}
+
+
+@media (max-width: 767px)
+{
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .blackBox {
+        display: none;
+    }
+    .navbar-inner {
+        margin: -20px;
+    }
+    .centerBox {
+        padding: 0;
+    }
+    .centerBox .span13 {
+        width: 460px;
+        margin-bottom: 30px;
+    }
+    .span13.left {
+        text-align: left;
+    }
+    .span13.left h4 {
+        padding-top: 30px;
+    }
+    .span13.left .imgBoxWithMask {
+        float: left;
+        margin: 0 30px 0 0;
+    }
+    .span13.right {
+        text-align: left;
+    }
+    .span13.right h4 {
+        padding-top: 30px;
+    }
+    .span13.right p {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .span13.right .imgBoxWithMask {
+        float: right;
+        margin: 0 0 0 30px;
+    }
+    
+    .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .carousel .container {
+
+    }
+    .carousel .item {
+        height: 300px;
+    }
+    .carousel img {
+        height: 300px;
+    }
+    .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    .carousel-caption .lead,
+    .carousel-caption .btn {
+        font-size: 18px;
+    }
+
+    .marketing .span4 + .span4 {
+        margin-top: 40px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+    .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+    
+    .centerBox {
+        width: 220px;
+    }
+    .centerBox .span13 {
+        width: 220px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .span13 {
+        margin: 0 !important;
+    }
+    
+    .span13.left .imgBoxWithMask,
+    .span13.right .imgBoxWithMask {
+        float: none;
+        margin: 0;
+    }
+    .graySolidBox {
+        width: 220px;
+    }
+}
+
+.pr { position: relative; }
+.tac { text-align: center; }
+.tal { text-align: left; }
