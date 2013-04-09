@@ -4,6 +4,7 @@ SpotfizzCom::Application.routes.draw do
   match '/cz-test',    to: 'static_pages#cz'
   match '/oxygen-preview',    to: 'static_pages#oxygenpreview'
   match '/yc-preview',    to: 'static_pages#oxygenpreview'
+   match '/icatapult',    to: 'static_pages#oxygenpreview'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
